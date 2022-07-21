@@ -74,6 +74,9 @@ header{
 .button{
     margin-top: 10px;
 }
+.button{
+    display: none;
+}
 .player-info{
     display: flex;
 }
@@ -92,19 +95,40 @@ header{
 }
 .footer {
     background-color: black;
-    padding: 50px 0;
-    /* width: 100%; */
+    padding: 100px;
+
+}
+
+.footer-div {
+    text-align: center;
     color: white;
-    text-align: center;
- }
-.footer-icon i{
-    text-align: center;
-    margin-right: 15px;
-    
+
 }
-#icon{ 
-    margin-right: 20px;  
+
+#underline {
+    height: 1px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgb(56, 54, 54);
+    margin-bottom: 10px;
 }
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.footer-flex span {
+    margin-right: 25px;
+}
+
+.icons {
+    text-align: center;
+    font-size: 40px;
+}
+
+
 @media only screen and (min-width:689px) and (max-width:992px) {
     .flexible-container{
         width: 100%;
@@ -124,6 +148,32 @@ header{
     align-items: center;
     
 }
+.add-button {
+    display: block;
+ }
+ .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#span{
+    width: 50%;
+}
+.footer-flex span {
+    margin-right: 0;
+}
+
+.icons {
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+}
+
 
 }
 
@@ -148,5 +198,35 @@ header{
         border-radius: 1em;
 
 }
+.add-button {
+    display: block;
+ }
+
+ .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
 }
+#span{
+    width: 50%;
+}
+.footer-flex span {
+    margin-right: 0;
+}
+
+.icons {
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+
+.add-button {
+display: none;
+}
+}
+
 
